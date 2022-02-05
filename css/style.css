@@ -1,0 +1,34 @@
+img {
+	width: 150px;
+}
+
+h1,
+span {
+	color: red;
+}
+
+.text1 {
+	background: blue;
+	width: 100px;
+	color: white;
+	margin-bottom: 80px;
+}
+
+h2 {
+	color: white;
+	background: green;
+	padding: 5px;
+}
+
+.header3 {
+	padding: 40px;
+}
+
+.text3 {
+	padding-left: 100px;
+}
+
+li {
+	font-size: 30px;
+	border: 1px black solid;
+}
