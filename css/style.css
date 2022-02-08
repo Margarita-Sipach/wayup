@@ -11,10 +11,11 @@ body{
 	letter-spacing: 0.02em;
 	line-height: 25px;
 	font-weight: 400;
+	max-width: 100%;
 }
 
 .wrapper{
-	width: 1300px;
+	width: 1170px; 
 	margin: 0 auto;
 }
 
@@ -23,6 +24,7 @@ h1{
 	line-height: 49px;
 	font-weight: 700;
 	padding-bottom: 10px;
+	padding-right: 35px;
 }
 
 span{
@@ -33,7 +35,7 @@ span{
 h2{
 	font-size: 30px;
 	font-weight: 700;
-	padding-top: 90px;
+	
 }
 
 h3{
@@ -41,7 +43,7 @@ h3{
 	font-weight: 700;
 }
 
-a{
+a, button{
 	font-family: "Montserrat";
 	font-size: 15px;
 	font-weight: 900;
@@ -55,6 +57,8 @@ a{
 
 /****************************************************************************/
 .header{
+padding-top: 62px;
+padding-bottom: 72px;
 background: #4dbdfd;
 background: -moz-linear-gradient(-45deg, #4dbdfd 0%, #378ed8 100%);
 background: -webkit-linear-gradient(-45deg, #4dbdfd 0%,#378ed8 100%);
@@ -64,19 +68,13 @@ color: #ffffff;
 }
 
 .logo{
-	padding-top: 62px;
 	width: 98px;
 	height: 38px;
 }
 
 .header__context{
 	display: flex;
-}
-
-.text{
-	padding-right: 35px;
-	padding-top: 100px;
-	padding-bottom: 213px;
+	align-items:center;
 }
 
 .text p{
@@ -84,13 +82,12 @@ color: #ffffff;
 	font-size: 16px;
 	line-height: 27px;
 	padding-bottom: 45px;
-	padding-right: 220px;
+	padding-right: 120px;
 }
 
 .big{
 	width: 641px;
 	height: 641px;
-	padding-bottom: 72ox;
 }
 
 
@@ -98,6 +95,8 @@ color: #ffffff;
 .light{
 	background: #ffffff;
 	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 120px;
 }
 
 .light p{
@@ -107,47 +106,35 @@ color: #ffffff;
 
 .context__light{
 	display: flex;
-	padding-top: 60px;
-	padding-bottom: 120px;
+	justify-content: space-between;
+	padding-top: 60px;	
 }
 
-.column:nth-child(1){
-	padding-right: 190px;
+.column{
+	width: 300px;
 }
 
-.column:nth-child(2){
-	width: 430px;
-}
 
-.column:nth-child(3){
-	padding-left: 190px;
-}
+
 
 
 /*****************************************************************************************************/
 .dark{
 	background: #ecf3f8;
 	text-align: center;
-}
-
-.context__dark{
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 100px;
-	margin-left:  470px;
-	margin-right: 470px;
+	padding-top: 90px;
+	padding-bottom: 123px;
 }
 
 form{
-	padding-top: 30px;
-	padding-bottom: 20px;
-
 	display: flex;
 	flex-direction: column;
+	max-width: 340px;
+	margin: 0 auto;
 }
 
 input{
-	display: block;
+	width: 100%;
 	height: 48px;
 	border: 1px solid #bbbbbb;
 	border-radius: 3px;
@@ -156,6 +143,11 @@ input{
 	font-size: 15px;
 	margin-top: 7px;
 	margin-bottom: 7px;
+}
+
+button{
+	width: 110%; 
+	margin-top: 7px;
 }
 
 
@@ -173,5 +165,9 @@ input{
 
 /************************************************************************************************/
 a:hover{
+	background: #ad901a;
+}
+
+button:hover{
 	background: #ad901a;
 }
